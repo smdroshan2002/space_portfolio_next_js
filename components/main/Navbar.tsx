@@ -11,10 +11,10 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/boy.png"
             alt="logo"
-            width={70}
-            height={70}
+            width={30}
+            height={30}
             className="cursor-pointer hover:animate-slowspin"
           />
           <span className="font-bold ml-[10px] hidden md:block text-gray-300">
