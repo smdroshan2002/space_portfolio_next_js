@@ -62,11 +62,9 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
                        text-white 
                        rounded-full 
                        max-w-[200px] 
-                       transition-transform 
-                       transform hover:scale-105 
                        z-[110]
                        bg-blue-500"
-            style={{ zIndex: 110, position: 'relative' }}
+            style={{ zIndex: 110 }}
           >
             Learn More!
           </motion.a>
