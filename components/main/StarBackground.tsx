@@ -9,7 +9,7 @@ import * as random from 'maath/random/dist/maath-random.esm';
 const StarBackground = (props: any) => {
     const ref = useRef<any>();
     const [sphere] = useState(() => {
-        const data = random.inSphere(new Float32Array(5000), { radius: 1.2 });
+        const data = random.inSphere(new Float32Array(6000), { radius: 1.2 });
         // Validate data
         for (let i = 0; i < data.length; i++) {
             if (isNaN(data[i])) {

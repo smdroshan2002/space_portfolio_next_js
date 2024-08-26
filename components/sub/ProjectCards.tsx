@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ src, title, description, link
         alt={title}
         width={1000}
         height={1000}
-        className="rounded-lg"
+        className="rounded-full"
         style={{ width: 'auto', height: 'auto' }} 
       />
       <h2 className="text-2xl font-semibold text-white mt-6 text-center">
