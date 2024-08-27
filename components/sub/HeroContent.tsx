@@ -12,26 +12,28 @@ interface HeroContentProps {
 
 const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
   return (
-    <section className={`relative flex flex-col items-center justify-center z-[100] ${className}`}>
+    <section className={`relative flex flex-col items-center justify-center ${className}`} style={{ zIndex: 100 }}>
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center px-20 mt-40 justify-center w-full z-[90]"
+        className="flex flex-row items-center px-20 mt-40 justify-center w-full"
       >
         <div className="flex flex-col gap-5 justify-center text-start max-w-[600px]">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box py-2 px-3 border border-[#7042f88b] opacity-90 z-[100]"
+            className="Welcome-box py-2 px-3 border border-[#7042f88b] opacity-90"
           >
-            <SparklesIcon className="text-[#FFFF00] mr-2 h-5 w-5" />
-            <h1 className="Welcome-text text-gray-300">
-              Full Stack Developer Portfolio
-            </h1>
+            <div className="flex items-center">
+              <SparklesIcon className="text-[#FFFF00] mr-2 h-5 w-5" />
+              <h1 className="Welcome-text text-gray-300">
+                Full Stack Developer Portfolio
+              </h1>
+            </div>
           </motion.div>
 
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="flex flex-col gap-6 text-6xl font-bold text-white z-[100]"
+            className="flex flex-col gap-6 text-6xl font-bold text-white"
           >
             <span>
               Providing
@@ -45,26 +47,19 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
 
           <motion.p
             variants={slideInFromLeft(0.8)}
-            className="text-lg text-gray-400 my-5 z-[100]"
+            className="text-lg text-gray-400 my-5"
           >
-             I&apos;m a Java full-stack programmer and I have skills across the board with programming in general, so I can handle both front-end and back-end development for your website. My proficiency in Java allows me to maintain high-performing server-side applications, and my experience with HTML, CSS, and JavaScript ensures a seamless front-end experience.
+            I&apos;m a Java full-stack programmer and I have skills across the board with programming in general, so I can handle both front-end and back-end development for your website. My proficiency in Java allows me to maintain high-performing server-side applications, and my experience with HTML, CSS, and JavaScript ensures a seamless front-end experience.
           </motion.p>
 
+          {/* Learn More! Button */}
           <motion.a
             variants={slideInFromLeft(1)}
             href="https://shaik-roshan-portfolio.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="py-2 
-                       button-primary 
-                       cursor-pointer 
-                       text-center 
-                       text-white 
-                       rounded-full 
-                       max-w-[200px] 
-                       z-[110]
-                       bg-blue-500"
-            style={{ zIndex: 110 }}
+            className="py-2 px-4 button-primary cursor-pointer text-center text-white rounded-full max-w-[200px] bg-blue-500"
+            style={{ position: "relative", pointerEvents: "auto", zIndex: 1000 }}
           >
             Learn More!
           </motion.a>
@@ -72,7 +67,8 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
 
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="flex justify-center items-center z-[80]" /* Lower z-index to ensure it's behind */
+          className="flex justify-center items-center"
+          style={{ zIndex: 80 }} /* Lower z-index to ensure it's behind */
         >
           <Image
             src="/mainIconsdark.svg"
