@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ src, title, description, link }) => {
   return (
-    <div className="flex flex-col items-center bg-gray-800 rounded-lg shadow-md p-6 transition-transform transform hover:scale-105 z-[40]">
+    <div className="flex flex-col items-center rounded-lg shadow-md p-6 transition-transform transform hover:scale-105 z-[40]">
       <Image
         src={src}
         alt={title}
@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ src, title, description, link
       <h2 className="text-2xl font-semibold text-white mt-6 text-center">
         {title}
       </h2>
-      <p className="text-gray-300 mt-4 text-center">{description}</p>
+      <p className="text-teal-400 mt-4 text-center">{description}</p>
       {link && (
         <a 
           href={link} 
