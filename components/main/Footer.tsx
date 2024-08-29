@@ -95,6 +95,12 @@ const Footer = () => {
                 smdroshan4@gmail.com
               </a>
             </p>
+            <p className="flex flex-row items-center my-[15px]">
+              <a href="tel:+918519960794"
+                className="text-[15px] ml-[6px] z-40">
+                  +918519960794
+              </a>
+            </p>
           </div>
         </div>
         <div className="mb-[20px] text-[15px] text-center">
