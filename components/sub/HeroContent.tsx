@@ -55,7 +55,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
           {/* Learn More! Button */}
           <motion.a
             variants={slideInFromLeft(1)}
-            href="https://shaik-roshan-portfolio.netlify.app/"
+            href="https://js-portfolio-rust.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="py-2 px-4 button-primary cursor-pointer text-center text-white rounded-full max-w-[200px] bg-blue-500"
