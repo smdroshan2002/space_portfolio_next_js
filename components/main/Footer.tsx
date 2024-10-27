@@ -89,16 +89,16 @@ const Footer = () => {
             <div className="font-bold text-[16px]">About</div>
             <p className="flex flex-row items-center my-[15px]">
               <a
-                href="mailto:smdroshan4@gmail.com"
+                href="mailto:smdroshan2002@gmail.com"
                 className="text-[15px] ml-[6px] z-40"
               >
-                smdroshan4@gmail.com
+                smdroshan2002@gmail.com
               </a>
             </p>
             <p className="flex flex-row items-center my-[15px]">
-              <a href="tel:+918519960794"
+              <a href="tel:+919030091352"
                 className="text-[15px] ml-[6px] z-40">
-                  +918519960794
+                  +919030091352
               </a>
             </p>
           </div>
