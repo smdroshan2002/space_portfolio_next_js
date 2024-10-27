@@ -29,7 +29,7 @@ const Footer = () => {
             <p className="flex flex-row items-center my-[15px]">
               <RxGithubLogo />
               <a
-                href="https://github.com/smdroshan4"
+                href="https://github.com/smdroshan2002"
                 className="text-[15px] ml-[6px] z-40"
                 target="_blank"
                 rel="noopener noreferrer"
