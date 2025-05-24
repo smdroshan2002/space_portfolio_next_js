@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set black background globally and hide overflow for starfield */
+html,
+body {
+  @apply bg-black text-white overflow-hidden;
+  scroll-behavior: smooth;
+}
+
+/* Cursive font style */
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+/* Welcome text gradient effect */
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -14,7 +24,11 @@
     linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
   background-blend-mode: normal, screen;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+/* Welcome box styles */
 .Welcome-box {
   isolation: isolate;
   overflow: hidden;
@@ -23,12 +37,12 @@
   border-radius: 32px;
   box-shadow: inset 0 -7px 11px #a48fff1f;
   display: flex;
-
   position: relative;
   width: max-content;
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
+/* Primary button gradient */
 .button-primary {
   background: linear-gradient(
       180deg,
@@ -38,6 +52,7 @@
     rgba(113, 47, 255, 0.12);
   box-shadow: inset 0 0 12px #bf97ff3d;
 }
+
 .button-primary:hover {
   background: linear-gradient(
       180deg,
@@ -49,15 +64,10 @@
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hidden { /* IE and Edge */
+.scrollbar-hidden {
   scrollbar-width: none; /* Firefox */
 }
+
 .scrollbar-hidden::-webkit-scrollbar {
-  display: none;
-}
-
-
-
-html {
-  scroll-behavior: smooth;
+  display: none; /* Chrome, Safari */
 }
