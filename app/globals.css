@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Set black background globally and hide overflow for starfield */
 html,
 body {
-  @apply bg-black text-white overflow-hidden;
+  @apply bg-black text-white overflow-x-hidden;
   scroll-behavior: smooth;
 }
 
