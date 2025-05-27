@@ -14,7 +14,7 @@ const Encryption = () => {
           className="text-[40px] font-medium text-center text-gray-300"
         >
           Performance
-          <span className="text-opacity[0.9] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          <span className="text-opacity[0.9] bg-clip-text bg-gradient-to-r from-black-500 to-cyan-500">
             {" "}
             &{" "}
           </span>
