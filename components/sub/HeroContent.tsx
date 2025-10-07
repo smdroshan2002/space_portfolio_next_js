@@ -26,7 +26,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
             <div className="flex items-center">
               <SparklesIcon className="text-[#FFFF00] mr-2 h-5 w-5" />
               <h1 className="Welcome-text text-gray-300">
-                Full Stack Developer Portfolio
+                I build fast, responsive web apps using Next.js & Java backend
               </h1>
             </div>
           </motion.div>
@@ -49,7 +49,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-400 my-5"
           >
-            I&apos;m a Java full-stack programmer and I have skills across the board with programming in general, so I can handle both front-end and back-end development for your website. My proficiency in Java allows me to maintain high-performing server-side applications, and my experience with HTML, CSS, and JavaScript ensures a seamless front-end experience.
+            I&apos; help small businesses get e-commerce, dashboards, or portfolio sites with fast loading, SEO & security.
           </motion.p>
 
           {/* Learn More! Button */}
@@ -61,7 +61,7 @@ const HeroContent: React.FC<HeroContentProps> = ({ className }) => {
             className="py-2 px-4 button-primary cursor-pointer text-center text-white rounded-full max-w-[200px] bg-blue-500"
             style={{ position: "relative", pointerEvents: "auto", zIndex: 1000 }}
           >
-            Learn More!
+            Hire Me!
           </motion.a>
         </div>
 
